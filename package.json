@@ -1,0 +1,32 @@
+{
+  "name": "ecdsa-node",
+  "version": "1.0.0",
+  "description": "Alchemy University first week deliverable by Eduardo Aire",
+  "main": "readme.md",
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduairet/ecdsa-node.git"
+  },
+  "keywords": [
+    "blockchain",
+    "web3",
+    "ecdsa",
+    "node",
+    "cryptography",
+    "react",
+    "javascript",
+    "vite"
+  ],
+  "author": "Alchemy University / Eduardo Aire Torres",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduairet/ecdsa-node/issues"
+  },
+  "homepage": "https://github.com/eduairet/ecdsa-node#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
