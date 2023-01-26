@@ -4,7 +4,7 @@
   "description": "Alchemy University first week deliverable by Eduardo Aire",
   "main": "readme.md",
   "scripts": {
-    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\""
+    "dev": "concurrently --kill-others-on-fail \"cd client && npm run dev\" \"cd server && npm run dev\""
   },
   "repository": {
     "type": "git",
