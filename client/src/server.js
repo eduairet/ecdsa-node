@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const server = axios.create({
-    baseURL: import.meta.env.SERVER_URL,
+    baseURL: 'https://ecdsa-node.web.app',
 });
 
 export default server;
