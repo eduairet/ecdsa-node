@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const port = 3042;
 
-app.use(cors({ origin: true }));
+app.use(cors());
 app.use(express.json());
 
 const balances = {
@@ -16,14 +16,12 @@ const balances = {
 };
 
 app.get('/balance/:address', (req, res) => {
-    response.set('Access-Control-Allow-Origin', '*');
     const { address } = req.params;
     const balance = balances[address] || null;
     res.send({ balance });
 });
 
 app.post('/send', (req, res) => {
-    response.set('Access-Control-Allow-Origin', '*');
     const { sender, recipient, amount } = req.body;
 
     setInitialBalance(sender);
