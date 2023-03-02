@@ -17,7 +17,7 @@ const balances = {
 
 app.get('/balance/:address', (req, res) => {
     const { address } = req.params;
-    const balance = balances[address] || 0;
+    const balance = balances[address] || null;
     res.send({ balance });
 });
 
