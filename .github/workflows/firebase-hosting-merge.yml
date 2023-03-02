@@ -17,4 +17,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ECDSA_NODE }}'
           channelId: live
           projectId: ecdsa-node
-          path: "./server"
+          entryPoint: "./server"
