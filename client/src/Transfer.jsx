@@ -14,7 +14,6 @@ function Transfer({ address, setBalance, signature, publicKey }) {
 
     async function transfer(e) {
         e.preventDefault();
-        setSuccess(false);
         // Verify that the transaction is valid
         try {
             // Create a hash for the amount to send
