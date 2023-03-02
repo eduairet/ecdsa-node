@@ -37,14 +37,7 @@ function Transfer({ address, setBalance, signature, publicKey }) {
                 // address you loose your money
                 const received = await server.get(`balance/${recipient}`);
                 const recipientBalance = received.data.balance;
-                if (received.balance !== null) {
-                    setRecipientBalance(recipientBalance);
-                } else {
-                    setRecipientBalance(0);
-                    throw new Error(
-                        "You sent money to an address that doesn't exist!"
-                    );
-                }
+                setRecipientBalance(recipientBalance);
             } else {
                 throw new Error('Invalid transaction!');
             }
