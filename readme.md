@@ -47,6 +47,7 @@ For this, you can `npm run dev` both the client and the server or run `npm run d
 
 ## Test it!
 
+-   Go to [ecdsa-node-beta.vercel.app](https://ecdsa-node-beta.vercel.app) and follow the next steps
 -   Fill in the data of your signature in the first form:
 
     -   **Amount hash:** `c89efdaa54c0f20c7adf612882df0950f5a951637e0307cdcb4c672f298b8bc6`
@@ -57,7 +58,7 @@ For this, you can `npm run dev` both the client and the server or run `npm run d
 
 -   If the values are correct your address and balance should appear
 -   Now fill out the send transaction form
-    -   **Send amount:** Same amount you used to create your signature
+    -   **Send amount:** Same amount you used to create your signature (for this signature is **1**)
     -   **Recipient:** A recipient address[^1]
 -   If everything goes well you'll see the recipient's address and balance
 
