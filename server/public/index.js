@@ -1,3 +1,4 @@
+const functions = require('firebase-functions');
 const express = require('express');
 const app = express();
 const cors = require('cors');
@@ -45,3 +46,5 @@ function setInitialBalance(address) {
         balances[address] = 0;
     }
 }
+
+exports.app = functions.https.onRequest(app);
