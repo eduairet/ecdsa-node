@@ -10,8 +10,8 @@ const amount = prompt('Type the ammount of your transfer: ');
 const amountHash = hashMessage(amount);
 console.log('Amount hash: ', toHex(amountHash));
 
-// Sign the message
-const signature = signMessage(amountHash, privKey);
+// Sign the message and check the console
+signMessage(amountHash, privKey);
 
 // Utils
 function hashMessage(message) {
