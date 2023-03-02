@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 const port = 3042;
 
-app.use(cors());
+app.use(cors({ origin: true }));
 app.use(express.json());
 
 const balances = {
