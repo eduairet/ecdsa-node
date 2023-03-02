@@ -6,15 +6,6 @@ const port = 3042;
 app.use(cors());
 app.use(express.json());
 
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header(
-        'Access-Control-Allow-Headers',
-        'Origin, X-Requested-With, Content-Type, Accept'
-    );
-    next();
-});
-
 const balances = {
     // 09d3c798acc21147b3c32605aeb3baf82b8c68a3211b05058563a223e88cd114
     '0x75a65075f3d8e12453e509f7c9bc06e3bfe36dc1': 100,

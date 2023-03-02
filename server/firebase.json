@@ -10,8 +10,18 @@
   "rewrites": [
     {
       "source": "**",
-      "destination": "/index.html",
       "function": "app"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/**",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
     }
   ]
 }
