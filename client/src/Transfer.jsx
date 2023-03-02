@@ -59,7 +59,7 @@ function Transfer({ address, setBalance, signature, publicKey }) {
             <h1>Send Transaction</h1>
             <form className='transfer' onSubmit={transfer}>
                 <label>
-                    Send Amount
+                    Send amount
                     <input
                         placeholder='1, 2, 3...'
                         value={sendAmount}
