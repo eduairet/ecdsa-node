@@ -6,7 +6,7 @@ const prompt = require('prompt-sync')({ sigint: true });
 // First get private key and amount from the user
 const privKey = prompt('What is your Private Key? ');
 console.log('Private Key: ', privKey);
-const amount = prompt('Type the ammount of your transfer: ');
+const amount = prompt('Type the amount of your transfer: ');
 const amountHash = hashMessage(amount);
 console.log('Amount hash: ', toHex(amountHash));
 
