@@ -14,7 +14,7 @@ For this exercise, I decided to use a signature to validate the sender account a
 
 ### Private key
 
-You can use some of the addresses set in the [server file](./server/public/index.js) in the `const balances` variable, or you can create new addresses with [generate.js](./server/scripts/generate.js)
+You can use some of the addresses set in the [server file](./server/index.js) in the `const balances` variable, or you can create new addresses with [generate.js](./server/scripts/generate.js)
 
 ```SHELL
 server $ node scripts/generate
